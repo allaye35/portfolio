@@ -1,0 +1,93 @@
+/* style.css */
+
+/* Réinitialisation des styles par défaut */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    background-color: #ececec; /* Match your homepage background */
+    color: #333;
+    line-height: 1.6;
+}
+
+.header {
+    background: #262626; /* Match your homepage header */
+    color: white;
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header .logo {
+    font-size: 30px;
+    font-weight: bold;
+    text-decoration: none;
+    color: white; /* Logo color same as the homepage */
+}
+
+.navbar a {
+    text-decoration: none;
+    margin-right: 15px;
+    color: white;
+    transition: color 0.3s;
+}
+
+.navbar a.active, 
+.navbar a:hover {
+    color: #f1f1f1; /* Hover and active link color to match the homepage */
+}
+
+.experience {
+    padding: 20px;
+    max-width: 800px;
+    margin: 30px auto;
+    background: rgba(255, 255, 255, 0.8); /* Semi-transparent white like the homepage */
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    border-radius: 10px; /* Same rounded corners as the homepage */
+}
+
+.experience h1 {
+    text-align: center;
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: #333; /* Heading color to contrast against the background */
+    padding-top: 20px;
+}
+
+.experience-entry {
+    margin-bottom: 15px;
+    padding: 15px;
+    border-bottom: 1px solid #ddd; /* Light border for separation, softer than homepage */
+}
+
+.experience-entry:last-child {
+    border-bottom: none;
+}
+
+.experience-entry h2 {
+    margin-bottom: 10px;
+    color: #28527a; /* Headings color to be consistent with the homepage */
+}
+
+.experience-entry p {
+    margin-bottom: 10px;
+    font-size: 16px;
+    color: #333; /* Paragraph color for better readability */
+}
+
+/* Responsive design adjustments */
+@media (max-width: 768px) {
+    .header {
+        flex-direction: column;
+    }
+    
+    .navbar a {
+        display: block;
+        padding: 10px 0;
+    }
+}
